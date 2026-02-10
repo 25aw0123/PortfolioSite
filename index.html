@@ -11,7 +11,35 @@
 
 <body>
     <header>
-        
+        <button class="menu-button" aria-label="メニュー切り替え" aria-controls="overlay-menu" aria-expanded="false">
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+            <span class="menu-button__line"></span>
+        </button>
+        <nav id="overlay-menu" class="global-nav" aria-hidden="true">
+            <div class="global-nav__content">
+                <ul class="global-nav__list">
+                    <li class="global-nav__item">
+                        <a class="global-nav__link" href="#top">
+                            <span class=global-nav__label--ja>トップ</span>
+                            <span class=global-nav__label--en>Top</span>
+                        </a>
+                    </li>
+                    <li class="global-nav__item">
+                        <a class="global-nav__link" href="#about">
+                            <span class=global-nav__label--ja>私のこと</span>
+                            <span class=global-nav__label--en>About</span>
+                        </a>
+                    </li>
+                    <li class="global-nav__item">
+                        <a class="global-nav__link" href="#works">
+                            <span class=global-nav__label--ja>作ったもの</span>
+                            <span class=global-nav__label--en>Works</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
     <main>
