@@ -1,3 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .menu-button {
     position: fixed;
     top: 20px;
@@ -129,6 +144,19 @@
     font-size: 0.9rem;
     letter-spacing: 0.1em;
     font-weight: 400;
+}
+
+footer{
+    background-color: #3d4f7e;
+    color: #fefef3;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    margin: 0 auto;
+    letter-spacing: 0.05em;
 }
 
 @media (min-width: 1024px) {
