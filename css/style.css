@@ -631,6 +631,11 @@ h2::after {
     max-width: 700px;
 }
 
+.strengths__container h2::after {
+    bottom: -11px;
+    background-color: #fffcf6;
+}
+
 .strengths__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1fr));
@@ -836,7 +841,6 @@ footer {
 
 footer p {
     margin: 0 auto;
-    font-family: YuGothic;
 }
 
 /* --- Work Intro Section --- */
