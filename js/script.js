@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   const hamburger = document.querySelector('.menu-button');
   const nav = document.querySelector('.global-nav');
+  const navLinks = document.querySelectorAll('.global-nav a');
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
@@ -12,6 +13,18 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.setAttribute('aria-hidden', !isOpen);
 
     document.body.style.overflow = isOpen ? 'hidden' : '';
+
+    navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      hamburger.classList.remove('active');
+      nav.classList.remove('active');
+      
+      hamburger.setAttribute('aria-expanded', 'false');
+      nav.setAttribute('aria-hidden', 'true');
+      
+      document.body.style.overflow = '';
+    });
+  });
   });
 
 
