@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const tagColor = categoryColors[item.category];
 
       htmlContent += `
-            <a href="./works/${item.id}/index.html" class="work-card" target=_blank>
+            <a href="./works/${item.id}/index.html" class="work-card">
 
                 <div class="work-card__content">
                     <p class="work-card__category" style="color: ${tagColor}; border-color: ${tagColor};">
