@@ -126,7 +126,7 @@ html {
     transition-delay: 0.3s;
 }
 
-.global-nav.active .global-nav__item:nth-child(3) {
+.global-nav.active .global-nav__item:nth-child(4) {
     transition-delay: 0.4s;
 }
 
