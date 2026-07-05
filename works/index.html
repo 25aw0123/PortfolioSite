@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>張 子謙 ｜ Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg" />
-    <link rel="stylesheet" href="css/style.css" media="screen">
-    <script src="js/script.js" defer></script>
+    <title>作品一覧 ｜ 張 子謙 ｜ Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+    <link rel="stylesheet" href="../css/style.css" media="screen">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
@@ -19,24 +19,24 @@
         </button>
 
         <nav id="overlay-menu" class="global-nav" aria-hidden="true">
-            <a href="#home"><img class="global-nav__logo" src="./img/logo.png" alt="CHANG TZU-CHIEN's Portfolio"
-                    width="1238"></a>
+            <a href="../index.html"><img class="global-nav__logo" src="../img/logo.png"
+                    alt="CHANG TZU-CHIEN's Portfolio" width="1238"></a>
             <div class="global-nav__content">
                 <ul class="global-nav__list">
                     <li class="global-nav__item">
-                        <a class="global-nav__link" href="#home">
+                        <a class="global-nav__link" href="../index.html">
                             <span class=global-nav__label--ja>ホーム</span>
                             <span class=global-nav__label--en>Home</span>
                         </a>
                     </li>
                     <li class="global-nav__item">
-                        <a class="global-nav__link" href="/about/index.html">
+                        <a class="global-nav__link" href="../about/index.html">
                             <span class=global-nav__label--ja>私について</span>
                             <span class=global-nav__label--en>About</span>
                         </a>
                     </li>
                     <li class="global-nav__item">
-                        <a class="global-nav__link" href="/works/index.html">
+                        <a class="global-nav__link" href="../works/index.html">
                             <span class=global-nav__label--ja>作品一覧</span>
                             <span class=global-nav__label--en>Works</span>
                         </a>
@@ -47,134 +47,118 @@
     </header>
 
     <main>
-        <section id="home" class="hero">
-            <p class="hero_subtitle_en">Hello. My name is</p>
-
-            <div class="marquee-wrapper">
-                <div class="marquee-content marquee-fast">
-                    <h1 class="hero__title">CHANG TZU-CHIEN.</h1>
-                </div>
-                <div class="marquee-content marquee-fast" aria-hidden="true">
-                    <h1 class="hero__title">CHANG TZU-CHIEN.</h1>
-                </div>
+        <section id="works-hero" class="works-hero">
+            <div class="bg-watermark-center">
+                <span>プロ</span>
+                <span>ジェクト</span>
             </div>
 
-            <div class="marquee-wrapper">
-                <div class="marquee-content marquee-slow">
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします⸜(ˊᵕˋ)⸝</p>
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします！</p>
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします。</p>
-                </div>
-                <div class="marquee-content marquee-slow" aria-hidden="true">
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします⸜(ˊᵕˋ)⸝</p>
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします！</p>
-                    <p class="hero__subtitle">初めまして、張 子謙（ちょう ずちぇん）です。よろしく、お願いします。</p>
-                </div>
-            </div>
-
-            <div class="hero__scroll">
-                <a class="scroll" href="#featured-works">
-                    <span class="arrow"></span>
-                </a>
+            <div class="works-header-centered">
+                <h1 class="page-title">WORKS</h1>
+                <span class="title-dash"></span>
             </div>
         </section>
 
-        <section id="featured-works" class="featured-works">
+        <section id="works-list" class="works-section-block">
+            <div class="section-label">
+                <span class="accent-dot"></span>
+                <h2 class="label-text">WORKS</h2>
+            </div>
 
-            <div class="featured-works__content">
-                <div class="bg-watermark">WORKS</div>
-                <div class="section-header">
-                    <span class="accent-dot"></span>
-                    <h2 class="featured-works__title">Featured Works</h2>
-                </div>
+            <div class="bg-watermark">WORKS</div>
 
-                <div class="works-grid">
-                    <section class="work-item item-left">
-                        <a href="./works/special_site/index.html" target="_blank" rel="noopener noreferrer">
-                            <h3 class="work-title">Webデザイン科<br>スペシャルサイト制作</h3>
-                            <div class="work-meta">
-                                <hr class="work-divider">
-                                <span class="work-date">2025.05〜2025.07</span>
-                            </div>
-                            <div class="work-image">
-                                <img src="./img/work01_special_site/work01_thumbnail.png"
-                                    alt="日本電子専門学校Webデザイン科スペシャルサイト制作" width="1200">
-                            </div>
-                            <p class="work-description">一年生前期の課題制作。入学後、初めての大型課題として企画から実装までを一人で担当しました。</p>
-                        </a>
-                        <div class="work-tags">
-                            <span class="tag">個人制作</span>
+            <div class="works-grid">
+                <section id="work-special-site" class="work-item item-left">
+                    <a href="../works/special_site/index.html" rel="noopener noreferrer">
+                        <h3 class="work-title">Webデザイン科<br>スペシャルサイト制作</h3>
+                        <div class="work-meta">
+                            <hr class="work-divider">
+                            <span class="work-date">2025.05〜2025.07</span>
                         </div>
-                    </section>
-
-                    <section class="work-item item-right">
-                        <a href="./works/recipe-owned-media/index.html" target="_blank" rel="noopener noreferrer">
-                            <h3 class="work-title">レシピオウンドメディア<br>新規制作</h3>
-                            <div class="work-meta">
-                                <hr class="work-divider">
-                                <span class="work-date">2025.10〜2025.12</span>
-                            </div>
-                            <div class="work-image">
-                                <img src="./img/work02_recipe_ownedmedia/work02_thumbnail.png" alt="レシピオウンドメディアの新規制作">
-                            </div>
-                            <p class="work-description">
-                                一年生後期の進級制作。大手食品メーカー様が管理するレシピサイトをもとに、食の魅力を広く伝えるオウンドメディア制作に取り組みました。
-                            </p>
-                        </a>
-                        <div class="work-tags">
-                            <span class="tag">個人制作</span>
+                        <div class="work-image">
+                            <img src="../img/work01_special_site/work01_thumbnail.png" alt="日本電子専門学校Webデザイン科スペシャルサイト制作"
+                                width="1200">
                         </div>
-                    </section>
-
-                    <section class="work-item item-left">
-                        <a href="./works/hotel_renewal/index.html" target="_blank" rel="noopener noreferrer">
-                            <h3 class="work-title">リゾートホテル<br>サイト UI/UX 改善提案</h3>
-                            <div class="work-meta">
-                                <hr class="work-divider">
-                                <span class="work-date">2026.04〜2026.05</span>
-                            </div>
-                            <div class="work-image">
-                                <img src="./img/work03_hotel_renewal/work03_thumbnail.png"
-                                    alt="リゾートホテルのサイトリニューアルUI/UX改善提案">
-                            </div>
-                            <p class="work-description">
-                                二年生前期の産学連携課題。チームで伊豆のリゾートホテルの既存サイトをもとにリニューアル提案を行いました。
-                            </p>
-                        </a>
-                        <div class="work-tags">
-                            <span class="tag">チーム制作</span>
-                        </div>
-                    </section>
                     </a>
-
-                    <div class="view-more-wrapper item-right">
-                        <a href="./works/index.html" class="view-more-btn">
-                            <span class="btn-text">View More</span>
-                            <span class="btn-arrow">→</span>
-                        </a>
+                    <div class="work-tags">
+                        <span class="tag">個人制作</span>
                     </div>
-                </div>
+                    <p class="work-description">一年生前期の課題制作。入学後、初めての大型課題として企画から実装までを一人で担当しました。</p>
+                    <a href="../works/special_site/index.html" rel="noopener noreferrer" class="work-link">
+                        <span class="view-more">詳しくみる →</span>
+                    </a>
+                </section>
+
+                <section id="work-recipe" class="work-item item-right">
+                    <a href="../works/recipe-owned-media/index.html" rel="noopener noreferrer">
+                        <h3 class="work-title">レシピオウンドメディア新規制作</h3>
+                        <div class="work-meta">
+                            <hr class="work-divider">
+                            <span class="work-date">2025.10〜2025.12</span>
+                        </div>
+                        <div class="work-image">
+                            <img src="../img/work02_recipe_ownedmedia/work02_thumbnail.png" alt="レシピオウンドメディアの新規制作">
+                        </div>
+                    </a>
+                    <div class="work-tags">
+                        <span class="tag">個人制作</span>
+                    </div>
+                    <p class="work-description">
+                        一年生後期の進級制作。大手食品メーカー様が管理するレシピサイトをもとに、食の魅力を広く伝えるオウンドメディア制作に取り組みました。
+                    </p>
+                    <a href="../works/recipe-owned-media/index.html" rel="noopener noreferrer" class="work-link">
+                        <span class="view-more">詳しくみる →</span>
+                    </a>
+                </section>
+
+                <section id="work-hotel" class="work-item item-left">
+                    <a href="../works/hotel_renewal/index.html" rel="noopener noreferrer">
+                        <h3 class="work-title">リゾートホテル<br>サイト UI/UX 改善提案</h3>
+                        <div class="work-meta">
+                            <hr class="work-divider">
+                            <span class="work-date">2026.04〜2026.05</span>
+                        </div>
+                        <div class="work-image">
+                            <img src="../img/work03_hotel_renewal/work03_thumbnail.png"
+                                alt="リゾートホテルのサイトリニューアルUI/UX改善提案">
+                        </div>
+                    </a>
+                    <div class="work-tags">
+                        <span class="tag">チーム制作</span>
+                    </div>
+                    <p class="work-description">
+                        二年生前期の産学連携課題。チームで伊豆のリゾートホテルの既存サイトをもとにリニューアル提案を行いました。
+                    </p>
+                    <a href="../works/hotel_renewal/index.html" rel="noopener noreferrer" class="work-link">
+                        <span class="view-more">詳しくみる →</span>
+                    </a>
+                </section>
+
+                <section id="work-photo-app" class="work-item item-right">
+                    <a href="../works/photo-search-app/index.html" rel="noopener noreferrer">
+                        <h3 class="work-title">画像検索アプリ<br>（WebAPIを利用）</h3>
+                        <div class="work-meta">
+                            <hr class="work-divider">
+                            <span class="work-date">2026.02</span>
+                        </div>
+                        <div class="work-image">
+                            <img src="../img/work04_photo_search_app/work04_thumbnail.png"
+                                alt="画像検索アプリ（WebAPIを利用した動的アプリケーション）">
+                        </div>
+                    </a>
+                    <div class="work-tags">
+                        <span class="tag">個人制作</span>
+                    </div>
+                    <p class="work-description">
+                        世界中の写真が集まっている「Pexels」というサイトのAPIを使って、キーワードを入力すると、そのキーワードに合った写真を表示します。
+                    </p>
+                    <a href="../works/photo-search-app/index.html" rel="noopener noreferrer" class="work-link">
+                        <span class="view-more">詳しくみる →</span>
+                    </a>
+                </section>
 
             </div>
-        </section>
 
-        <section id="about-teaser" class="about-teaser">
-            <div class="about-teaser__bg">
-                <a href="./about/index.html" class="about-teaser__link">
-                    <div class="about-teaser__content">
-
-                        <div class="about-teaser__text">
-                            <h2 class="about-title">ABOUT</h2>
-                            <p class="about-desc">私について・スキル・経歴</p>
-                        </div>
-
-                        <div class="about-arrow-circle">
-                            <span class="arrow">→</span>
-                        </div>
-
-                    </div>
-                </a>
-            </div>
         </section>
     </main>
 
