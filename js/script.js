@@ -64,4 +64,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   });
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-show'); 
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 
+  });
+
+  document.querySelectorAll('.work-item').forEach(item => {
+    observer.observe(item);
+  });
+
 });
